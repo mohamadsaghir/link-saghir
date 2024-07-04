@@ -1,0 +1,129 @@
+:root {
+    --color-primary: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-black-tint: hsl(0, 0%, 12%);
+    --color-black: hsl(0, 0%, 8%);
+  
+    --xxl: 4.5rem;
+    --xl: 4rem;
+    --l: 2.4rem;
+    --m: 1.6rem;
+    --s: 1.4rem;
+    --xs: 1.2rem;
+    --xxs: 1rem;
+  
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+  }
+  
+  body {
+    font-family: "inter", sans-serif;
+  }
+  
+  @font-face {
+    font-family: inter;
+    src: url(assets/fonts/inter.ttf);
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: var(--color-black);
+    font-family: inter, sans-serif;
+    font-weight: var(--weight-regular);
+    font-size: var(--s);
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile {
+    min-width: 38.4rem;
+    background-color: var(--color-black-tint);
+    border: 1px solid var(--color-black-tint);
+    border-radius: var(--xs);
+    padding: var(--xl);
+    text-align: center;
+    color: var(--color-white);
+  }
+  
+  .profile-avatar {
+    border-radius: 50%;
+    width: 8.8rem;
+    height: 8.8rem;
+    margin-bottom: var(--l);
+  }
+  
+  .profile-name {
+    font-size: var(--l);
+    font-weight: var(--weight-semi-bold);
+    margin-bottom: var(--s);
+  }
+  
+  .profile-location {
+    font-size: var(--s);
+    font-weight: var(--weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--l);
+  }
+  
+  .profile-description {
+    font-size: var(--s);
+    font-weight: var(--weight-regular);
+    margin-bottom: var(--l);
+  }
+  
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m);
+    text-decoration: none;
+    
+  }
+  
+  .btn {
+    cursor: pointer;
+    background-color: var(--color-grey);
+    min-height: var(--xxl);
+    border: none;
+    border-radius: 0.8rem;
+    color: var(--color-white);
+    padding: var(--xs);
+    font-size: var(--s);
+    font-weight: var(--weight-bold);
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+  }
+  
+  @media (max-width: 25em) {
+    .profile {
+      min-width: 32.7rem;
+      border-radius: var(--xs);
+      padding: var(--l);
+    }
+  }
+  .btn a {
+    text-decoration: none;
+}
